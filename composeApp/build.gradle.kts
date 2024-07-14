@@ -52,6 +52,10 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.ktor.client.cio)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -66,7 +70,6 @@ kotlin {
             implementation(libs.coil.svg)
             implementation(libs.coil.network.ktor)
             implementation(libs.ktor.client.core)
-            implementation(libs.ktor.client.cio)
         }
     }
 }
