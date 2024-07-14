@@ -63,6 +63,10 @@ kotlin {
             implementation(libs.multiplatform.markdown.renderer)
             implementation(libs.mikepenz.multiplatform.markdown.renderer.m3)
             implementation(libs.multiplatform.markdown.renderer.coil3)
+            implementation(libs.coil.svg)
+            implementation(libs.coil.network.ktor)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.cio)
         }
     }
 }
